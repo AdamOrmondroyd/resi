@@ -32,3 +32,7 @@ pub fn dm_over_rs(z: f64, h0rd: f64, omegam: f64) -> f64 {
     // return the last value of the integral, which is dm/rs at z
     integral.last().cloned().unwrap_or(0.0) * C / h0rd
 }
+
+pub fn dv_over_rs(z: f64, h0rd: f64, omegam: f64) -> f64 {
+    (z * dm_over_rs(z, h0rd, omegam).powi(2) * dh_over_rs(z, h0rd, omegam)).cbrt()
+}
