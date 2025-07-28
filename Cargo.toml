@@ -1,0 +1,12 @@
+[package]
+name = "deri"
+version = "0.1.0"
+edition = "2024"
+description = "Dark Energy Rusty Instrument"
+
+[lib]
+name = "deri"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.25.1", features = ["extension-module"] }
