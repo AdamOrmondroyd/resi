@@ -1,4 +1,5 @@
-# RESI
+# RESI ![resi logo](resi_logo.png)
+
 ### Dark Energy Rusty Instrument
 Rust port of BAO likelihoods for DESI.
 
