@@ -36,7 +36,7 @@ impl PyLikelihood {
 }
 
 #[pymodule]
-fn deri(m: &Bound<'_, PyModule>) -> PyResult<()> {
+fn resi(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(dh_over_rs, m)?)?;
     m.add_function(wrap_pyfunction!(dm_over_rs, m)?)?;
     m.add_function(wrap_pyfunction!(dv_over_rs, m)?)?;
