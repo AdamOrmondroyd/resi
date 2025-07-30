@@ -39,7 +39,6 @@ pub fn dv_over_rs(z: f64, h0rd: f64, omegam: f64) -> f64 {
     (z * dm_over_rs(z, h0rd, omegam).powi(2) * dh_over_rs(z, h0rd, omegam)).cbrt()
 }
 
-
 fn parse_covariance_matrix(filename: &str) -> DMatrix<f64> {
     let content = fs::read_to_string(filename).expect("Failed to read the covariance matrix file");
     let lines: Vec<&str> = content.lines().collect();
@@ -76,8 +75,7 @@ struct DesiData {
     quantity: String,
 }
 
-pub
-struct Likelihood {
+pub struct Likelihood {
     data: Vec<DesiData>,
     invcov: DMatrix<f64>,
     lognorm: f64,
@@ -91,7 +89,11 @@ impl Likelihood {
             .expect("Covariance matrix is not invertible");
         let n = data.len() as f64;
         let lognorm = -(n * (2.0 * std::f64::consts::PI).ln() + log_det_cov) / 2.0;
-        Self { data, invcov, lognorm }
+        Self {
+            data,
+            invcov,
+            lognorm,
+        }
     }
 
     pub fn from_files(data_file: &str, cov_file: &str) -> Self {

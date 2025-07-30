@@ -31,7 +31,9 @@ struct PyLikelihood {
 impl PyLikelihood {
     #[new]
     fn new(data_file: &str, cov_file: &str) -> PyResult<Self> {
-        Ok(Self { inner: lcdm::Likelihood::from_files(data_file, cov_file), })
+        Ok(Self {
+            inner: lcdm::Likelihood::from_files(data_file, cov_file),
+        })
     }
 
     fn __call__(&self, h0rd: f64, omegam: f64) -> PyResult<f64> {
