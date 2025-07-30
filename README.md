@@ -15,6 +15,8 @@ uv tool install maturin
 maturin develop --release
 ```
 
+`quickstart.py` demonstrates how to use `resi` with `pypolychord`.
+
 ## c++ interface
 At this point all of the functionality is in compiled languages, so no need for python.
 
