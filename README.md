@@ -35,3 +35,15 @@ make clean; make polychord_CC
 
 My `rust` branch of `polychord` already has the requisite changes to use this specific library.
 However, it seems to require cleaning out all the previous compilation and starting afresh.
+
+## run `main.rs`
+```bash
+cargo run --release
+```
+
+## run `examples/test_cpp.cpp`
+```bash
+cargo build --release
+g++ -std=c++17 -I target/cxxbridge examples/test_cpp.cpp target/release/libresi.a -o test_likelihood
+./test_likelihood
+```
