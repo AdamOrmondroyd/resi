@@ -18,7 +18,7 @@ At this point all of the functionality is in compiled languages, so no need for 
 ```bash
 # checkout cpp branch and build
 git checkout cpp
-cargo build --release
+cargo build --release --no-default-features
 
 # copy the header and library to polychord
 cp target/cxxbridge/resi/src/lib.rs.h /path/to/polychord/likelihoods/CC/
