@@ -18,7 +18,7 @@ At this point all of the functionality is in compiled languages, so no need for 
 ```bash
 # checkout cpp branch and build
 git checkout cpp
-cargo build --release --no-default-features
+cargo build --release
 
 # copy the header and library to polychord
 cp target/cxxbridge/resi/src/lib.rs.h /path/to/polychord/likelihoods/CC/
@@ -31,3 +31,4 @@ make clean; make polychord_CC
 ```
 
 My `rust` branch of `polychord` already has the requisite changes to use this specific library.
+However, it seems to require cleaning out all the previous compilation and starting afresh.
