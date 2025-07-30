@@ -1,11 +1,11 @@
 [package]
-name = "deri"
+name = "resi"
 version = "0.1.0"
 edition = "2024"
 description = "Dark Energy Rusty Instrument"
 
 [lib]
-name = "deri"
+name = "reri"
 # crate-type = ["cdylib"]
 crate-type = ["staticlib"]
 
