@@ -1,7 +1,8 @@
-# RESI ![resi logo](resi_logo.png)
+# RESI
 
 ### Dark Energy Rusty Instrument
 Rust port of BAO likelihoods for DESI.
+![resi logo](resi_logo.png)
 
 ## to pip install
 ```bash
