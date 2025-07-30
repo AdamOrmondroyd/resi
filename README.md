@@ -3,7 +3,7 @@
 ### Dark Energy Rusty Instrument
 Rust port of BAO likelihoods for DESI.
 
-![resi logo](resi_logo.png)
+![resi logo](logo.png)
 
 ## to pip install
 ```bash
