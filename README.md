@@ -21,8 +21,6 @@ maturin develop --release
 At this point all of the functionality is in compiled languages, so no need for python.
 
 ```bash
-# checkout cpp branch and build
-git checkout cpp
 cargo build --release
 
 # copy the header and library to polychord
