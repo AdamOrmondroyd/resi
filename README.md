@@ -25,7 +25,7 @@ cargo build --release
 
 # copy the header and library to polychord
 cp target/cxxbridge/resi/src/lib.rs.h /path/to/polychord/likelihoods/CC/
-cp target/release/libderi.a /path/to/polychord/likelihoods/CC/
+cp target/release/libresi.a /path/to/polychord/likelihoods/CC/
 
 # build and run polychord
 cd /path/to/polychord

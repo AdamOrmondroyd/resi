@@ -1,4 +1,4 @@
 fn main() {
     cxx_build::bridge("src/lib.rs")
-        .compile("deri-cxx");
+        .compile("resi-cxx");
 }
