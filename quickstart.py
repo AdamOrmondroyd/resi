@@ -9,8 +9,8 @@ import time
 import resi
 
 residr2 = resi.Likelihood(
-    "/Users/adam/phd/jayesian/jayesian/likelihoods/data/desidr2/desidr2_mean.txt",
-    "/Users/adam/phd/jayesian/jayesian/likelihoods/data/desidr2/desidr2_cov.txt",
+    "/Users/adam/phd/jesi/jesi/likelihoods/data/desidr2/desidr2_mean.txt",
+    "/Users/adam/phd/jesi/jesi/likelihoods/data/desidr2/desidr2_cov.txt",
 )
 
 
